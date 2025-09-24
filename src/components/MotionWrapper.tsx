@@ -7,14 +7,13 @@ interface MotionWrapperProps extends MotionProps {
   delay?: number;
 }
 
-// Default animations for sections
 const defaultAnimations = {
   hidden: { opacity: 0, y: 20 },
   visible: (delay: number = 0) => ({
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
+      duration: 1.0,
       delay: delay,
       ease: "easeOut",
     },

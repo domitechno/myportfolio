@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Carousel from "@/components/Carousel.tsx";
+
+const images = [
+  "/images/screenorange1.png",
+  "/images/screenorange2.png",
+  "/images/screenorange3.png",
+  "/images/screenorange4.png",
+  "/images/screenorange5.png",
+  "/images/screenorange6.png",
+  "/images/screenorange7.png",
+];
+---
+
+<Layout title="Projects" description="Project 02 explaination">
+<Carousel client:load images={images} />
+ <section class="max-w-3xl mx-auto py-12 px-6">
+  <h1 class="text-3xl font-bold mb-3">Orange Prod</h1>
+
+  <a 
+    href="https://github.com/domitechno/orangeprod" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="inline-flex items-center gap-2 bg-purple-500 hover:bg-fuchsia-600 text-white text-sm font-medium px-5 py-2 rounded-lg transition-colors duration-200 font-bold mb-3"
+  >
+ 
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 24 24" 
+      fill="currentColor" 
+      class="w-5 h-5"
+    >
+      <path 
+        fill-rule="evenodd" 
+        d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.92.58.11.79-.25.79-.55v-2c-3.2.7-3.88-1.39-3.88-1.39-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.7.08-.7 1.18.08 1.8 1.22 1.8 1.22 1.04 1.78 2.74 1.26 3.41.96.1-.76.41-1.26.74-1.55-2.55-.29-5.23-1.27-5.23-5.66 0-1.25.45-2.27 1.2-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.17a11 11 0 0 1 5.79 0c2.21-1.48 3.18-1.17 3.18-1.17.63 1.59.23 2.76.11 3.05.75.8 1.2 1.82 1.2 3.07 0 4.4-2.69 5.37-5.25 5.65.42.37.8 1.1.8 2.22v3.29c0 .3.21.66.8.55A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z" 
+        clip-rule="evenodd"
+      />
+    </svg>
+
+    Find my code
+  </a>
+
+     <h2 class="font bold mb-2">Interface Reproduction</h2>
+
+    <p class="leading-relaxed">
+      <strong><em>Orange Technical Support System,</em></strong> a web-based service management platform designed for telecommunications technical support operations.
+    The system facilitates interactions between Orange customers (clients) and technical support staff (technicians) through a structured workflow for product management, support ticket creation, and intervention tracking. <br/>
+    The system enables clients to manage their product portfolios, request technical interventions, and track support progress, while providing technicians with tools to view, manage, and resolve customer support requests.
+    </p>
+</section>
+<section class="max-w-3xl mx-auto py-12 px-6">
+    <h1 class="text-3xl font-bold mb-4">💡How did the project is born ?</h1>
+
+    <p class="leading-relaxed">
+This is my first project ever. 
+I tried to recreate an user interface with many roles (admins, clients . . .) where the visitor can have a similar experience as Orange.fr when he try to order a product or call for home repair intervention.
+I used an old version of the famous website Orange.fr as a model for mine.
+
+    </p>
+</section>
+<section class="max-w-3xl mx-auto py-12 px-6">
+     <h1 class="text-3xl font-bold mb-4">🛸 Wanna take a slight look ?</h1>
+<div class="flex justify-center mt-6">
+  <a href="https://orangeprod.great-site.net" class="bg-purple-500 hover:bg-fuchsia-600 text-white text-lg px-6 py-3 rounded-lg transition-colors duration-200">
+    Localhost project Demo👩‍🔧
+  </a>
+</div>
+    </section>
+</Layout>

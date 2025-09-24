@@ -17,7 +17,7 @@ export default function Footer() {
             whileHover={{ scale: 1.01 }}
           >
             &copy; {new Date().getFullYear()} {personalInfo.name}. All rights
-            reserved. ✨
+            reserved to <em> "Domi's Codes" </em>
           </motion.p>
           <motion.p
             className="text-sm text-muted-foreground mt-2 md:mt-0 text-center md:text-left"
@@ -35,8 +35,7 @@ export default function Footer() {
               transition={{ duration: 0.5 }}
             >
               💻
-            </motion.span>{" "}
-            and{" "}
+            </motion.span>{" "}{" "}
             <motion.span
               className="inline-block"
               animate={{
@@ -48,7 +47,7 @@ export default function Footer() {
                 duration: 1.5,
               }}
             >
-              ❤️
+              and a little bit of ❤️
             </motion.span>
           </motion.p>
         </motion.div>

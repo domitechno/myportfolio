@@ -2,8 +2,8 @@
   "name": "my-portfolio",
   "type": "module",
   "version": "0.0.1",
-  "description": "Modern portfolio template with animations and glassmorphism effects",
-  "author": "Rishikesh S",
+  "description": "",
+  "author": "Yoann G.",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "lucide-react": "^0.483.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "swiper": "^12.0.1",
     "tailwind-merge": "^3.0.2",
     "tailwindcss": "^4.0.14",
     "tw-animate-css": "^1.2.4"

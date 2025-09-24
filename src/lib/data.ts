@@ -1,171 +1,136 @@
 export const personalInfo = {
-  name: "Lorem Ipsum",
-  location: "Dolor Sit Amet",
-  email: "lorem@ipsum.com",
-  github: "https://github.com/loremipsum",
-  linkedin: "https://linkedin.com/in/loremipsum",
-  profilePicture: "/profile.jpeg",
-  heroDescription:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  name: "Yoann's Portfolio",
+  email: "yoanngueu@gmail.com",
+  location: "https://www.slovaquie.campusfrance.org/fr/la-beaute-de-la-france",
+  profilePicture: "/yopdp.jpg",
+  github: "https://github.com/domitechno", 
+  linkedin: "https://www.linkedin.com/in/yoanngueu/",
+  heroDescription: "",
 };
 
-export const workExperience = [
+interface Project {
+  title: string;
+  image: string;
+  description: string;
+  technologies: string[];
+  url: string;
+}
+
+export const projects: Project[] = [
   {
-    company: "Lorem Ipsum Corp",
-    location: "Lorem City",
-    position: "Lorem Engineer",
-    period: "Jan 2020 - Present",
-    achievements: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-      "Excepteur sint occaecat cupidatat non proident.",
-      "Sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.",
-    ],
+    title: "Lumen&Leaf",
+    image: "/eeyuh.png",
+    description: "Online Particpative Library",
+    technologies: ["Angular", "Express.js", "Node.js"],
+    url: "/lumenandleaf"
   },
   {
-    company: "Dolor Sit Amet",
-    location: "Ipsumville",
-    position: "Software Developer",
-    period: "Feb 2019 - Jan 2020",
-    achievements: [
-      "Morbi in sem quis dui placerat ornare.",
-      "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.",
-    ],
+    title: "Orange Prod",
+    image: "/orange.png",
+    description: "Reproduction of Orange.com",
+    technologies: ["PHP","MySQL"],
+    url: "orange-prod"
+  },
+    {
+    title: "TicTacToe 2v",
+    image: "/frontttt.avif",
+    description: "Game paltform",
+    technologies: ["Python", "AI Injection"],
+    url: "/tictactoe"
   },
   {
-    company: "Consectetur Inc.",
-    location: "Adipiscing, Ipsum",
-    position: "Intern",
-    period: "Jun 2018 - Feb 2019",
-    achievements: [
-      "Praesent dapibus, neque id cursus faucibus.",
-      "Fusce feugiat malesuada odio.",
-    ],
+    title: "MoodTunes",
+    image: "/jeans.png",
+    description: "Indie Music Player",
+    technologies: ["React Native", "Spotify API", "Machine Learning"],
+    url: "moodtunes"
+  },  
+];
+
+export const skills = {
+  programmingLanguages: [
+    { name: "Java", logo: "/icons/java.png" },
+    { name: "Python", logo: "/icons/python.png" },
+    { name: "JavaScript", logo: "/icons/javascript.png" },
+    { name: "PHP", logo: "/icons/php.png" },
+  ],
+  frontendDevelopment: [
+    { name: "HTML", logo: "/icons/html.png" },
+    { name: "CSS", logo: "/icons/css.png" },
+    { name: "React", logo: "/icons/react.png" },
+    { name: "Angular", logo: "/icons/angular.png" },
+  ],
+  backendDevelopment: [
+    { name: "Symfony", logo: "/icons/symfony.png" },
+    { name: "Express.js", logo: "/icons/express.png" },
+    { name: "Node.js", logo: "/icons/nodejs.png" },
+  ],
+  databaseAndStorage: [
+    { name: "MySQL", logo: "/icons/mysql.png" },
+    { name: "MongoDB", logo: "/icons/mongodb.png" },
+  ],
+  toolsAndServices: [
+    { name: "Git", logo: "/icons/git.png" },
+    { name: "Bootstrap", logo: "/icons/bootstrap.png" },
+  ],
+};
+
+export const skillCategories = [
+  { key: "programmingLanguages", title: "Programming Languages", icon: "💻" },
+  { key: "frontendDevelopment", title: "Frontend Development", icon: "🎨" },
+  { key: "backendDevelopment", title: "Backend Development", icon: "⚙️" },
+  { key: "databaseAndStorage", title: "Database & Storage", icon: "🗄️" },
+  { key: "toolsAndServices", title: "Tools & Services", icon: "🧰" },
+];
+
+export const awards = [
+  {
+    name: "Coddy Certificates",
+    issuer: "HTML & CSS",
+    date: "January 2025",
+    type: "Personal",
+    status: "Completed",
+  },
+  {
+    name: "SQL Associate Certification",
+    issuer: "DataCamp",
+    date: "October 2025",
+    type: "National",
+    status: "Ongoing",
+  },
+  {
+    name: "AWS Certified",
+    issuer: "Cloud Practitioner",
+    date: "December 2025",
+    type: "International",
+    status: "Later",
   },
 ];
 
 export const education = [
   {
-    institution: "Lorem Ipsum University",
-    location: "Lorem City",
-    degree: "BSc Lorem Ipsum",
-    period: "2015 - 2019",
+    institution: "Lycée Marie-Curie",
+    location: "Versailles, France",
+    degree: "Baccalauréat Générale",
+    period: "2016 - 2020",
     achievements: [
-      "President of Lorem Ipsum Club",
-      "Organized multiple lorem events",
-      "Represented university in national competitions.",
-      "Graduated with honors.",
+      "Seconde Générale",
+      "1ère & Terminale ES",
+      "Represented of the eco-delegate in 2018"
     ],
-  },
-];
-export const skills = {
-  programmingLanguages: [
-    "LoremLang",
-    "IpsumScript",
-    "DolorLang",
-    "SitLang",
-    "AmetLang",
-    "ConsecteturLang",
-  ],
-  frontendDevelopment: [
-    "LoremJS",
-    "IpsumJS",
-    "Dolor Native",
-    "Sit UI",
-    "Amet CSS",
-    "HTML",
-    "CSS",
-  ],
-  backendDevelopment: ["LoremNode", "IpsumExpress"],
-  databaseAndStorage: ["LoremDB", "IpsumORM"],
-  cloudAndDevOps: ["LoremCloud"],
-  toolsAndServices: [
-    "LoremAuth",
-    "IpsumCMS",
-    "DolorAnalytics",
-    "SitValidator",
-    "AmetMonitor",
-    "ConsecteturPanel",
-    "AdipiscingTrigger",
-  ],
-};
-
-export const projects = [
-  {
-    title: "Lorem Ipsum Project",
-    github: "https://github.com/loremipsum/project",
-    description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-      "Excepteur sint occaecat cupidatat non proident.",
+  }, {
+    institution: "I.N.S.T.A",
+    location: "Paris, France",
+    degree: "BTS SIO",
+    period: "2022 - 2024",
+    achievements: ["After attempted law school, I decided to switch to IT and enrolled myself in studies that always suited more"],
+  }, {
+   institution: "I.N.S.T.A",
+    location: "Paris, France",
+    degree: "Licence CDA",
+    period: "2024 - 2025",
+    achievements: ["After a lot of effort and self learning i could obtain my diploma as a software developper",
+      "Graduted with honors"
     ],
-  },
-  {
-    title: "Dolor Sit Amet App",
-    github: "https://github.com/loremipsum/dolorapp",
-    description: [
-      "Morbi in sem quis dui placerat ornare.",
-      "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.",
-      "Praesent dapibus, neque id cursus faucibus.",
-      "Fusce feugiat malesuada odio.",
-      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
-    ],
-  },
-];
-
-export const awards = [
-  {
-    name: "Lorem Ipsum Award",
-    issuer: "Lorem Organization",
-    date: "Jan 2020",
-    type: "International",
-    position: "First Place",
-  },
-  {
-    name: "Dolor Sit Amet Prize",
-    issuer: "Ipsum Foundation",
-    date: "Feb 2021",
-    type: "National",
-    position: "Runner-up",
-  },
-  {
-    name: "Consectetur Hackathon",
-    issuer: "Adipiscing Org",
-    date: "Mar 2022",
-    type: "National",
-    position: "Winner",
-  },
-  {
-    name: "Vestibulum Event",
-    issuer: "Vestibulum College",
-    date: "Apr 2022",
-    type: "National",
-    position: "First Prize",
-  },
-  {
-    name: "Curabitur Hackfest",
-    issuer: "Curabitur Institute",
-    date: "May 2022",
-    type: "National",
-    position: "Second Prize",
-  },
-  {
-    name: "Praesent Hacks",
-    issuer: "Praesent Group",
-    date: "Jun 2022",
-    type: "National",
-    position: "Second Runner-up",
-  },
-  {
-    name: "Fusce Hack",
-    issuer: "Fusce Club",
-    date: "Jul 2022",
-    type: "National",
-    position: "Most Impactful Hack",
   },
 ];

@@ -6,7 +6,7 @@ interface Props {
   description?: string;
 }
 
-const { title = "Rishikesh S - Portfolio", description = "My Portfolio" } =
+const { title = "Yoann's Portfolio", description = "My Portfolio" } =
   Astro.props;
 ---
 
@@ -42,10 +42,10 @@ const { title = "Rishikesh S - Portfolio", description = "My Portfolio" } =
     if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
       return localStorage.getItem("theme");
     }
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    // 👇 Ici on force dark si aucun choix n'existe
+    return "dark";
   };
+
   const isDark = getThemePreference() === "dark";
   document.documentElement.classList[isDark ? "add" : "remove"]("dark");
 

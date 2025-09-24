@@ -1,4 +1,3 @@
-import React from "react";
 import { awards } from "@/lib/data";
 import { Trophy } from "lucide-react";
 import MotionWrapper from "./MotionWrapper";
@@ -14,7 +13,7 @@ export default function AwardsSection() {
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            🏆 Awards
+            🏆 Awards & Certifications
           </h2>
         </MotionWrapper>
 
@@ -33,7 +32,7 @@ export default function AwardsSection() {
                   <h3 className="font-medium">{award.name}</h3>
                 </div>
                 <p className="text-xs text-muted-foreground mb-1 pl-8">
-                  🏢 {award.issuer}
+                  🏫 {award.issuer}
                 </p>
                 <div className="flex flex-col space-y-2 mt-auto">
                   <div className="flex justify-between items-center">
@@ -44,14 +43,14 @@ export default function AwardsSection() {
                       className="text-xs px-2 py-1 bg-purple-500/10 rounded-full"
                       whileHover={{ scale: 1.05 }}
                     >
-                      {award.position}
+                      {award.status}
                     </motion.span>
                   </div>
                   <motion.span
                     className="text-xs text-muted-foreground/80 bg-background/50 px-2 py-1 rounded-md w-fit"
                     whileHover={{ scale: 1.05 }}
                   >
-                    {award.type === "International" ? "🌎 " : "🇮🇳 "}
+                    {award.type === "International" ? "🌎 " : "🎓"}
                     {award.type}
                   </motion.span>
                 </div>
